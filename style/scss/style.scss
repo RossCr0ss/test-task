@@ -6,11 +6,10 @@
   display: flex;
   flex-direction: column;
 
-  header {
-    background-image: url('/img/BitmapWithMask.png');
+  .header {
     height: 1062px;
     width: 100%;
-    position: absolute;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -105,13 +104,30 @@
         font-size: 18px;
         line-height: 32px;
         letter-spacing: 0.2px;
-        color: #ffffff;
+
         margin-bottom: 54px;
         width: 1567px;
         height: 45px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
+        h4 {
+          color: #ffffff;
+        }
+
+        .path {
+          background-color: Transparent;
+
+          background-repeat: no-repeat;
+          border: none;
+          cursor: pointer;
+          overflow: hidden;
+          outline: none;
+          mix-blend-mode: normal;
+          opacity: 0.6;
+          transform: matrix(-1, 0, 0, 1, 0, 0);
+        }
       }
 
       &__button {
@@ -135,16 +151,171 @@
 
     .header_carousel {
       margin-top: 312px;
-
       width: 70px;
       height: 21.08px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
 
-      ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+      button {
+        background-color: Transparent;
+        padding: 0;
+        border: none;
+        cursor: pointer;
       }
     }
   }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+
+    &_group {
+      width: 100%;
+      height: 2038px;
+
+      display: flex;
+
+      &_line {
+        position: absolute;
+        margin-top: 453px;
+        margin-left: 631px;
+        z-index: 1;
+      }
+
+      &_oval {
+        position: absolute;
+        z-index: 1;
+        margin-top: 553px;
+        margin-left: 986px;
+      }
+
+      &_circle {
+        z-index: 2;
+
+        &__first {
+          position: absolute;
+          margin-top: 92px;
+          margin-left: 370px;
+          z-index: 2;
+        }
+
+        &__second {
+          position: absolute;
+          margin-top: 779px;
+          margin-left: 976px;
+          z-index: 2;
+        }
+
+        &__third {
+          position: absolute;
+          margin-top: 1506px;
+          margin-left: 378px;
+          z-index: 2;
+        }
+      }
+
+      &_phoneimage {
+        &__first {
+          position: absolute;
+          margin-top: 92px;
+          margin-left: 432px;
+          z-index: 3;
+        }
+
+        &__second {
+          transform: rotate(18deg);
+          margin-top: 772px;
+          margin-left: 924.69px;
+          z-index: 3;
+        }
+        &__third {
+          position: absolute;
+          margin-top: 1506px;
+          margin-left: 440px;
+          z-index: 2;
+        }
+      }
+
+      &_text {
+        display: flex;
+        flex-direction: column;
+
+        &__title {
+          height: 51px;
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: 800;
+          font-size: 38px;
+          line-height: 51px;
+          letter-spacing: 0.4px;
+          color: #00a031;
+        }
+
+        &__subtitle {
+          margin-top: 28px;
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0.2px;
+          color: #6c6c6c;
+        }
+
+        &__list {
+          margin-left: 28px;
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0.2px;
+          color: #6c6c6c;
+          ul {
+            list-style-image: url("../../img/iconfinder.png");
+          }
+        }
+
+        button {
+          margin-top: 32px;
+          width: 208px;
+          height: 54px;
+          border: 2px solid #00a031;
+          box-sizing: border-box;
+          background: #ffffff;
+          border-radius: 28px;
+
+          span {
+            font-family: Poppins;
+            font-size: 18px;
+            line-height: 21px;
+            text-align: center;
+            color: #00a031;
+          }
+        }
+      }
+    }
+  }
+}
+
+#firstTextBlock {
+  position: absolute;
+  margin-top: 179px;
+  margin-left: 975px;
+  display: flex;
+  flex-direction: column;
+}
+
+#secondTextBlock {
+  position: absolute;
+  margin-top: 906px;
+  margin-left: 378px;
+}
+
+#thirdTextBlock {
+  position: absolute;
+  margin-top: 1589px;
+  margin-left: 975px;
 }

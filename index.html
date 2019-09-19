@@ -7,16 +7,16 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./style/css/reset-style.css" />
     <link rel="stylesheet" href="./style/css/style.css" />
-
+<script src="./script/slider.js" async></script>
     <title>Document</title>
   </head>
   <body>
     <div class="page">
-      <header>
+      <header class="header" style="background-image: url('./img/BitmapWithMask.png')">
         <div class="top">
           <div class="top_logo">
             <a href="#">
-              <img src="/img/Path_716.png" width="31.51px" height="31.51px" alt="logo" />
+              <img src="./img/Path_716.png" width="31.51px" height="31.51px" alt="logo" />
 
               <p></p>UPQODE</p></a
             >
@@ -39,13 +39,12 @@
               <h1>Mileage Made Simple</h1>
             </div>
             <div class="center_text__subtitle">
-              <a href="#">
-                <img src="/img/left page.svg" alt="left arrow">
-              </a>
+              <button class="path" onclick="pageLeft()"><img src="./img/left page.svg" alt="left arrow"></button>
+                  
               <h4>Motivation And Your Personal Vision Unbeatable Force</h4>
-              <a href="#">
-                  <img src="/img/right page.svg" alt="right arrow">
-                </a>
+
+              <button class="path" onclick="pageRight()"><img src="./img/right page.svg" alt="right arrow"></button>
+              
             </div>
             <div class="center_text__button">
               <button>Start Free Trial</button>
@@ -53,21 +52,105 @@
           </div>
 
           <div class="header_carousel">
-              <ul class="header_carousel__slides">
-                  <li>
-                    <img src="/img/Oval Copy.svg" />
-                  </li>
-                  <li>
-                    <img src="/img/Oval-Active.png" />
-                  </li>
-                  <li>
-                    <img src="/img/Oval Copy.svg" />
-                  </li>
-                  
-                  <!-- items mirrored twice, total of 12 -->
-                </ul>
+              <button id="firstOval"><img src="./img/Oval Copy.svg" /></button>
+              <button><img src="./img/Oval-Active.png" /></button>
+              <button><img src="./img/Oval Copy.svg" /></button>
+             
           </div>
       </header>
+
+      <div class="content">
+        <div class="content_group">
+
+
+          <!-- Line & Oval -->
+
+          <div class="content_group_line">
+            <img src="./img/Path 2.png" alt="">
+          </div>
+          <div class="content_group_oval">
+            <img src="./img/Ov.svg" alt="">
+          </div>
+
+          <!-- Circle -->
+          <div class="content_group_circle__first">
+            <img src="./img/Group 18.png" alt="">
+          </div>
+          <div class="content_group_circle__second">
+            <img src="./img/Group 18.png" alt="">
+          </div>
+          <div class="content_group_circle__third">
+            <img src="./img/Group 18.png" alt="">
+          </div>
+
+          <!-- Phone image -->
+          <div class="content_group_phoneimage__first">
+            <img src="./img/phone Bitmap.png" alt="">
+          </div>
+          <div class="content_group_phoneimage__second">
+              <img src="./img/phone Bitmap.png" alt="">
+          </div>
+          <div class="content_group_phoneimage__third">
+              <img src="./img/phone Bitmap.png" alt="">
+          </div>
+
+          <!-- Text -->
+
+          <!-- First text block -->
+          <div class="content_group_text" id="firstTextBlock">
+            <div class="content_group_text__title">
+                <h2>Track every trip you made</h2>
+            </div>
+            <div class="content_group_text__subtitle">
+                <p>Every one of your trips is captured immediately and is never forgotten</p>
+                <br>
+            </div>
+            <div class="content_group_text__list">
+              <ul>
+                <li>No signal dropout</li>
+                <li>No missed trips</li>
+              </ul>
+            </div>
+            <button><span>Lean more</span>  <img src="./img/arrow.svg" alt=""></button>
+          </div>
+
+          <!-- Second text block -->
+          <div class="content_group_text" id="secondTextBlock">
+              <div class="content_group_text__title">
+                  <h2>Classify with a single swipe</h2>
+              </div>
+              <div class="content_group_text__subtitle">
+                  <p>Swipe right for business. Swipe left for personal. It's as easy <br> as that</p>
+             </div>
+              <div class="content_group_text__list">
+                <ul>
+                  <li>Review trips on the go</li>
+                  <li>Classify journeys in seconds</li>
+                </ul>
+              </div>
+              <button><span>Lean more</span>  <img src="./img/arrow.svg" alt=""></button>
+            </div>
+          <!-- Third text block -->
+          <div class="content_group_text" id="thirdTextBlock">
+              <div class="content_group_text__title">
+                  <h2>Claim your money back with <br> ease</h2>
+              </div>
+              <br>
+              <br>
+              <div class="content_group_text__subtitle">
+                  <p>Claiming mileage has never been so easy, with all calculations<br> done for you</p>
+             </div>
+              <div class="content_group_text__list">
+                <ul>
+                  <li>100% HMRC compliance</li>
+                  <li>All logs in one place</li>
+                </ul>
+              </div>
+              <button><span>Lean more</span>  <img src="./img/arrow.svg" alt=""></button>
+            </div>
+        </div>
+        
+      </div>
     </div>
   </body>
 </html>
