@@ -5,6 +5,7 @@
   background: #ffffff;
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   .header {
     height: 1062px;
@@ -318,4 +319,178 @@
   position: absolute;
   margin-top: 1589px;
   margin-left: 975px;
+}
+
+.teams {
+  position: relative;
+  margin-top: 244px;
+  width: 1165px;
+  height: 534px;
+  display: flex;
+  flex-direction: row;
+
+  &_info {
+    display: flex;
+    flex-direction: column;
+
+    &_title {
+      width: 328px;
+      height: 51px;
+      margin-top: 26px;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 38px;
+      line-height: 51px;
+      letter-spacing: 0.4px;
+      color: #00a031;
+    }
+
+    &_subtitle {
+      margin-top: 10px;
+
+      height: 16px;
+      font-family: Gilroy;
+      font-size: 16px;
+      line-height: 16px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #6c6c6c;
+    }
+
+    &_text {
+      height: 130px;
+      width: 550px;
+      margin-top: 40px;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.2px;
+      color: #6c6c6c;
+    }
+
+    &_links {
+      margin-top: 43px;
+      ul {
+        display: flex;
+        flex-direction: row;
+
+        li {
+          font-family: Gilroy;
+          font-size: 16px;
+          line-height: 16px;
+
+          margin-right: 16px;
+          letter-spacing: 3px;
+          text-transform: uppercase;
+
+          list-style-image: url("/img/Oval\ link.png");
+
+          a {
+            color: #6c6c6c;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    &_slider {
+      display: flex;
+      flex-direction: row;
+      margin-top: 70px;
+      background: #fbfbfb;
+      width: 935px;
+      height: 130px;
+
+      &_center {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+
+        &__button {
+          display: flex;
+          flex-direction: row;
+          margin-top: 36px;
+          justify-content: space-between;
+          width: 510px;
+
+          button {
+            font-family: Gilroy;
+            font-size: 16px;
+            line-height: 16px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            background-color: Transparent;
+            color: #00a031;
+            border: none;
+            cursor: pointer;
+            overflow: hidden;
+            outline: none;
+            mix-blend-mode: normal;
+
+            img {
+              margin-left: 10px;
+            }
+          }
+        }
+
+        &__name {
+          margin-top: 9px;
+          width: 104px;
+          height: 28px;
+
+          p {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing: 0.2px;
+            color: #00a031;
+          }
+        }
+      }
+    }
+  }
+
+  &_image {
+    display: flex;
+    flex-direction: row;
+    img {
+      background-size: cover;
+    }
+
+    &__first {
+      position: absolute;
+      z-index: 3;
+      width: 400px;
+      height: 533px;
+    }
+    &__second {
+      position: absolute;
+      margin-top: 24px;
+      margin-left: 112px;
+      z-index: 2;
+
+      mix-blend-mode: normal;
+      opacity: 0.5;
+      img {
+        max-height: 467px;
+      }
+    }
+    &__third {
+      position: absolute;
+      margin-top: 57px;
+      margin-left: 205px;
+      z-index: 1;
+
+      mix-blend-mode: normal;
+      opacity: 0.2;
+      img {
+        max-height: 410px;
+      }
+    }
+  }
 }

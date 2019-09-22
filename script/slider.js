@@ -1,12 +1,10 @@
 const images = ["image", "BitmapWithMask", "image"];
-const ovals = ["Oval", "Oval-Active"];
+const oval1 = document.querySelector("button.oval1");
+const oval2 = document.querySelector("button.oval2");
+const oval3 = document.querySelector("button.oval3");
+
 let i = 1;
 const header = document.querySelector("header.header");
-
-const firstOval = document.querySelector("button.firstOval");
-const secondOval = document.querySelector("button.secondOval");
-const thirdOval = document.querySelector("button.thirdOval");
-const arrOval = [firstOval, secondOval, thirdOval];
 
 function pageLeft() {
   i -= 1;
@@ -16,10 +14,6 @@ function pageLeft() {
   let urlString = "url(./img/" + images[i] + ".png)";
 
   header.style.backgroundImage = urlString;
-
-  arrOval.forEach(oval => {
-    oval.style.backgroundImage = urlString;
-  });
 }
 
 function pageRight() {
@@ -32,4 +26,12 @@ function pageRight() {
   header.style.backgroundImage = urlString;
 }
 
-function checkOval() {}
+function checkOval() {
+  switch ((this.i = 0)) {
+    case oval1.style.img:
+      break;
+
+    default:
+      break;
+  }
+}
